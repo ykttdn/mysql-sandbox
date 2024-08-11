@@ -1,0 +1,10 @@
+services:
+  mysql:
+    build: .
+    volumes:
+      - db-data:/var/lib/mysql
+    env_file:
+      - .env
+
+volumes:
+  db-data:
